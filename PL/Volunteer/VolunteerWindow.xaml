@@ -1,0 +1,178 @@
+﻿<Window x:Class="PL.Volunteer.VolunteerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL.Volunteer"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Closed="Window_Closed"
+        Title="VolunteerWindow" Height="900" Width="800"
+        DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
+        FlowDirection="RightToLeft">
+
+    <Window.Resources>
+        <Style x:Key="myTextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Visibility" Value="{Binding ButtonText, Converter={StaticResource ConvertUpdateToVisibleKey}}" />
+        </Style>
+        <Style x:Key="myLabelStyle" TargetType="Label">
+            <Setter Property="Visibility" Value="{Binding ButtonText, Converter={StaticResource ConvertUpdateToVisibleKey}}" />
+        </Style>
+    </Window.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="10">
+            <!-- שמירה על ההגדרות הקיימות -->
+            <Grid.RowDefinitions>
+                <!-- במקום 23+ שורות Auto, נשתמש בגובה קבוע ואז שורה אחרונה מתרחבת -->
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="תעודת זהות:" Grid.Row="0" Grid.Column="0"/>
+        <TextBox Grid.Row="0" Grid.Column="1"
+                 Text="{Binding CurrentVolunteer.Id, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                 IsReadOnly="{Binding ButtonText, Converter={StaticResource ConvertUpdateToTrueKey}}"/>
+
+        <Label Content="שם:" Grid.Row="1" Grid.Column="0"/>
+        <TextBox Grid.Row="1" Grid.Column="1"
+                 Text="{Binding CurrentVolunteer.Name, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+        <Label Content="מספר טלפון:" Grid.Row="2" Grid.Column="0"/>
+        <TextBox Grid.Row="2" Grid.Column="1"
+                 Text="{Binding CurrentVolunteer.Phone, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+        <Label Content="מייל:" Grid.Row="3" Grid.Column="0"/>
+        <TextBox Grid.Row="3" Grid.Column="1"
+                 Text="{Binding CurrentVolunteer.Email, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+        <Label Content="סיסמא:" Grid.Row="4" Grid.Column="0"/>
+        <TextBox Grid.Row="4" Grid.Column="1"
+                 Text="{Binding CurrentVolunteer.Password, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+        <Label Content="כתובת:" Grid.Row="5" Grid.Column="0"/>
+        <TextBox Grid.Row="5" Grid.Column="1"
+                 Text="{Binding CurrentVolunteer.Address, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+        <Label Content="תפקיד:" Grid.Row="6" Grid.Column="0"/>
+        <ComboBox Grid.Row="6" Grid.Column="1"
+                  SelectedValue="{Binding CurrentVolunteer.Role, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                  ItemsSource="{Binding Source={StaticResource RoleCollectionKey}}" IsEnabled="{Binding Role,Converter={StaticResource ConvertManagerToIsEnabledKey }}"/>
+
+        <Label Content="לא פעיל/פעיל:" Grid.Row="7" Grid.Column="0"/>
+        <CheckBox Grid.Row="7" Grid.Column="1"
+                  VerticalAlignment="Center"
+                  IsChecked="{Binding CurrentVolunteer.Active, Mode=TwoWay}"
+                  IsEnabled="{Binding CurrentVolunteer.CallingVolunteerTherapy, Converter={StaticResource ConvertCallInProgressToEnableKey} }"/>
+
+        <Label Content="מרחק מקסימלי לקריאה:" Grid.Row="8" Grid.Column="0"/>
+        <TextBox Grid.Row="8" Grid.Column="1"
+                 Text="{Binding CurrentVolunteer.MaxDistanceForCall, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+        <Label Content="סוג מרחק:" Grid.Row="9" Grid.Column="0"/>
+        <ComboBox Grid.Row="9" Grid.Column="1"
+                  SelectedValue="{Binding CurrentVolunteer.DistanceType, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                  ItemsSource="{Binding Source={StaticResource DistanceTypeCollectionKey}}"/>
+
+        <Label Content="סך קריאות שטופלו:" Grid.Row="10" Grid.Column="0" Style="{StaticResource myLabelStyle}"/>
+        <TextBlock Grid.Row="10" Grid.Column="1"
+                 Style="{StaticResource myTextBlockStyle}"
+                 Text="{Binding CurrentVolunteer.TotalCallsHandled, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+        <Label Content="סך קריאות שבוטלו:" Grid.Row="11" Grid.Column="0" Style="{StaticResource myLabelStyle}"/>
+        <TextBlock Grid.Row="11" Grid.Column="1"
+                 Style="{StaticResource myTextBlockStyle}"
+                 Text="{Binding CurrentVolunteer.TotalCallsCanceled, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+        <Label Content="סך קריאות שבחר לטפל ופג תוקפן:" Grid.Row="12" Grid.Column="0" Style="{StaticResource myLabelStyle}"/>
+        <TextBlock Grid.Row="12" Grid.Column="1"
+                 Style="{StaticResource myTextBlockStyle}"
+                   Text="{Binding CurrentVolunteer.TotalCallsChoseHandleHaveExpired, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+        <StackPanel Visibility="{Binding CurrentVolunteer.CallingVolunteerTherapy, Converter={StaticResource ConvertCallInProgressToVisibleKey}}" Grid.Row="22">
+            <TextBlock   Text="הקריאה שבטיפולו:--------------" Grid.Row="13"/>
+
+            <Label Content="מספר קריאה:" Grid.Row="14" Grid.Column="0"/>
+            <TextBlock  Grid.Row="14" Grid.Column="1"
+                 Text="{Binding CurrentVolunteer.CallingVolunteerTherapy.CallId, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+            <Label Content=" סוג :" Grid.Row="15" Grid.Column="0"/>
+            <TextBlock  Grid.Row="15" Grid.Column="1"
+         Text="{Binding CurrentVolunteer.CallingVolunteerTherapy.CallType, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+            <Label Content=" תאור  :" Grid.Row="16" Grid.Column="0"/>
+            <TextBlock  Grid.Row="16" Grid.Column="1"
+        Text="{Binding CurrentVolunteer.CallingVolunteerTherapy.CallDescription, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+            <Label Content="כתובת  :" Grid.Row="17" Grid.Column="0"/>
+            <TextBlock  Grid.Row="17" Grid.Column="1"
+       Text="{Binding CurrentVolunteer.CallingVolunteerTherapy.CallAddress, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+            <Label Content=" זמן פתיחת הקיראה  :" Grid.Row="18" Grid.Column="0"/>
+            <TextBlock  Grid.Row="18" Grid.Column="1"
+        Text="{Binding CurrentVolunteer.CallingVolunteerTherapy.OpeningTime, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+            <Label Content=" זמן סיום :" Grid.Row="19" Grid.Column="0"/>
+            <TextBlock  Grid.Row="19" Grid.Column="1"
+         Text="{Binding CurrentVolunteer.CallingVolunteerTherapy.MaxTimeFinishCall, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+            <Label Content=" זמן תחילת הטיפול  :" Grid.Row="20" Grid.Column="0"/>
+            <TextBlock  Grid.Row="20" Grid.Column="1"
+        Text="{Binding CurrentVolunteer.CallingVolunteerTherapy.EntryTimeForTreatment, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+
+            <Label Content="סטטוס הקריאה בטיפול-בטיפול/בסיכון:" Grid.Row="22" Grid.Column="0"/>
+            <TextBlock  Grid.Row="22" Grid.Column="1"
+         Text="{Binding CurrentVolunteer.CallingVolunteerTherapy.StatusCalling, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+        </StackPanel>
+        <Button Grid.Row="23" Grid.Column="1" Height="50" Margin="50,50,200,20"
+                Content="{Binding ButtonText}" Click="btnAddUpdate_Click"/>
+
+        <StackPanel Grid.Column="1" Visibility="{Binding Role, Converter={StaticResource ConvertManagerToVisibleKey}, ConverterParameter='Invert'}">
+        <Button Grid.Row="13"  Height="50" Margin="50,50,200,20" Content="בחירת קריאה" Click="ChooseCall_Btn_Click" >
+            <Button.IsEnabled>
+                <MultiBinding Converter="{StaticResource ConvertCallInProgressAndActiveToEnableKey}">
+                    <Binding Path="CurrentVolunteer.Active"/>
+                    <Binding Path="CurrentVolunteer.CallingVolunteerTherapy"/>
+                </MultiBinding>
+            </Button.IsEnabled>
+        </Button>
+
+            <Button Grid.Row="15"  Content="ביטול טיפול" Click="cancelTreatmentBtn_click" 
+                Visibility="{Binding CurrentVolunteer.CallingVolunteerTherapy,Converter={StaticResource ConvertCallInProgressToVisibleKey}}"/>
+
+            <Button Grid.Row="16"  Content="סיום טיפול" Click="endTreatmentBtn_click"
+                Visibility="{Binding CurrentVolunteer.CallingVolunteerTherapy,Converter={StaticResource ConvertCallInProgressToVisibleKey}}"/>
+        </StackPanel>
+        <Button Content="הסטוריית קריאות" Click="callHistory_Btn_Click"  Grid.Row="14" Grid.Column="1"/>
+
+</Grid>
+</ScrollViewer>
+</Window>

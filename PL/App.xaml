@@ -1,0 +1,29 @@
+﻿<Application x:Class="PL.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PL"
+             StartupUri="Login.xaml">
+    <Application.Resources>
+        <local:CallTypeCollection x:Key="CallTypeCollectionKey" />
+        <local:RoleCollection x:Key="RoleCollectionKey" />
+        <local:DistanceTypeCollection x:Key="DistanceTypeCollectionKey"/>
+        <local:StatusCallCollection x:Key="StatusCallCollectionKey"/>
+        <local:ConvertUpdateToTrue x:Key="ConvertUpdateToTrueKey" />
+        <local:ConvertUpdateToVisible x:Key="ConvertUpdateToVisibleKey"/>
+        <local:ConvertManagerToVisible x:Key="ConvertManagerToVisibleKey"/>
+        <local:ConvertCallInProgressToVisible x:Key="ConvertCallInProgressToVisibleKey"/>
+        <local:ConvertCallInProgressAndActiveToEnable x:Key="ConvertCallInProgressAndActiveToEnableKey"/>
+        <local:VolunteerInListAttributesCollection x:Key="VolunteerInListAttributesCollectionKey"/>
+        <local:ClosedCallInListAttributesCollection x:Key="ClosedCallInListAttributesCollectionKey"/>
+        <local:OpenCallInListAttributesCollection x:Key="OpenCallInListAttributesCollectionKey"/>
+        <local:CallInListAttributesCollection x:Key="CallInListAttributesCollectionKey"/>
+        <local:ConvertManagerToIsEnabled x:Key="ConvertManagerToIsEnabledKey"/>
+        <local:ConverterEnumCallTypeToColor x:Key="ConverterEnumCallTypeToColorKey"/>
+        <local:ConverterEnumStatusCallToColor x:Key="ConverterEnumStatusCallToColorKey"/>
+        <local:ConverterOpenOrOpenAtRiskToEnable x:Key="ConverterOpenOrOpenAtRiskToEnableKey"/>
+        <local:ConverterInTreatmentOrInTreatmentAtRiskToEnable x:Key="ConverterInTreatmentOrInTreatmentAtRiskToEnableKey"/>
+        <local:ConvertCallInProgressToEnable x:Key="ConvertCallInProgressToEnableKey"/>
+        <local:InverseBoolConverter x:Key="InverseBoolConverterKey"/>
+        <local:SimulatorButtonContentConverter x:Key="SimulatorButtonContentConverterKey"/>
+    </Application.Resources>
+</Application>

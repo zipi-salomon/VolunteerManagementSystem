@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCall xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Call>
+    <Id>1</Id>
+    <CallType>HouseCleaning</CallType>
+    <CallAddress>ז'בוטינסקי 33, פתח תקווה</CallAddress>
+    <Latitude>32.090468</Latitude>
+    <Longitude>34.878975</Longitude>
+    <OpeningTime>2025-07-06T22:30:43</OpeningTime>
+    <CallDescription>ז'בוטינסקי 33, פתח תקווה 34.878975 32.090468 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-07T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>2</Id>
+    <CallType>Ironing</CallType>
+    <CallAddress>ויצמן 19, כפר סבא</CallAddress>
+    <Latitude>32.174547</Latitude>
+    <Longitude>34.905562</Longitude>
+    <OpeningTime>2025-07-07T22:30:43</OpeningTime>
+    <CallDescription>ויצמן 19, כפר סבא 34.905562 32.174547 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-08T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>3</Id>
+    <CallType>Shopping</CallType>
+    <CallAddress>הרצל 9, נהריה</CallAddress>
+    <Latitude>33.004863</Latitude>
+    <Longitude>35.092421</Longitude>
+    <OpeningTime>2025-07-05T22:30:43</OpeningTime>
+    <CallDescription>הרצל 9, נהריה 35.092421 33.004863 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-06T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>4</Id>
+    <CallType>Shopping</CallType>
+    <CallAddress>שדרות ירושלים 45, יפו</CallAddress>
+    <Latitude>32.051958</Latitude>
+    <Longitude>34.758285</Longitude>
+    <OpeningTime>2025-07-09T22:30:43</OpeningTime>
+    <CallDescription>שדרות ירושלים 45, יפו 34.758285 32.051958 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-10T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>5</Id>
+    <CallType>HouseCleaning</CallType>
+    <CallAddress>התקווה 7, אשקלון</CallAddress>
+    <Latitude>31.670788</Latitude>
+    <Longitude>34.571228</Longitude>
+    <OpeningTime>2025-07-08T22:30:43</OpeningTime>
+    <CallDescription>התקווה 7, אשקלון 34.571228 31.670788 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-09T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>6</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>שלמה המלך 19, אשדוד</CallAddress>
+    <Latitude>31.803685</Latitude>
+    <Longitude>34.641451</Longitude>
+    <OpeningTime>2025-07-07T22:30:43</OpeningTime>
+    <CallDescription>שלמה המלך 19, אשדוד 34.641451 31.803685 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-25T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>7</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>שדרות הרצל 33, חיפה</CallAddress>
+    <Latitude>32.815532</Latitude>
+    <Longitude>34.995479</Longitude>
+    <OpeningTime>2025-07-13T22:30:43</OpeningTime>
+    <CallDescription>שדרות הרצל 33, חיפה 34.995479 32.815532 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-19T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>8</Id>
+    <CallType>Transportation</CallType>
+    <CallAddress>הרצל 77, ראשון לציון</CallAddress>
+    <Latitude>31.965539</Latitude>
+    <Longitude>34.803267</Longitude>
+    <OpeningTime>2025-07-07T22:30:43</OpeningTime>
+    <CallDescription>הרצל 77, ראשון לציון 34.803267 31.965539 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-25T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>9</Id>
+    <CallType>Transportation</CallType>
+    <CallAddress>הר הצופים 3, ירושלים</CallAddress>
+    <Latitude>31.793755</Latitude>
+    <Longitude>35.241553</Longitude>
+    <OpeningTime>2025-07-13T22:30:43</OpeningTime>
+    <CallDescription>הר הצופים 3, ירושלים 35.241553 31.793755 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-19T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>10</Id>
+    <CallType>Shopping</CallType>
+    <CallAddress>ארלוזורוב 21, נתניה</CallAddress>
+    <Latitude>32.329859</Latitude>
+    <Longitude>34.855738</Longitude>
+    <OpeningTime>2025-07-13T22:30:43</OpeningTime>
+    <CallDescription>ארלוזורוב 21, נתניה 34.855738 32.329859 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-19T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>11</Id>
+    <CallType>Ironing</CallType>
+    <CallAddress>התקווה 7, אשקלון</CallAddress>
+    <Latitude>31.670788</Latitude>
+    <Longitude>34.571228</Longitude>
+    <OpeningTime>2025-07-13T22:30:43</OpeningTime>
+    <CallDescription>התקווה 7, אשקלון 34.571228 31.670788 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-19T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>12</Id>
+    <CallType>Transportation</CallType>
+    <CallAddress>עמק רפאים 34, ירושלים</CallAddress>
+    <Latitude>31.764492</Latitude>
+    <Longitude>35.220554</Longitude>
+    <OpeningTime>2025-07-04T22:30:43</OpeningTime>
+    <CallDescription>עמק רפאים 34, ירושלים 35.220554 31.764492 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-28T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>13</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>דרך חיפה 101, חיפה</CallAddress>
+    <Latitude>32.811834</Latitude>
+    <Longitude>34.983419</Longitude>
+    <OpeningTime>2025-07-07T22:30:43</OpeningTime>
+    <CallDescription>דרך חיפה 101, חיפה 34.983419 32.811834 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-25T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>14</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>דרך חיפה 101, חיפה</CallAddress>
+    <Latitude>32.811834</Latitude>
+    <Longitude>34.983419</Longitude>
+    <OpeningTime>2025-07-03T22:30:43</OpeningTime>
+    <CallDescription>דרך חיפה 101, חיפה 34.983419 32.811834 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-29T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>15</Id>
+    <CallType>Ironing</CallType>
+    <CallAddress>הר הצופים 3, ירושלים</CallAddress>
+    <Latitude>31.793755</Latitude>
+    <Longitude>35.241553</Longitude>
+    <OpeningTime>2025-07-10T22:30:43</OpeningTime>
+    <CallDescription>הר הצופים 3, ירושלים 35.241553 31.793755 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-22T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>16</Id>
+    <CallType>Transportation</CallType>
+    <CallAddress>שדרות ירושלים 45, יפו</CallAddress>
+    <Latitude>32.051958</Latitude>
+    <Longitude>34.758285</Longitude>
+    <OpeningTime>2025-07-12T22:30:43</OpeningTime>
+    <CallDescription>שדרות ירושלים 45, יפו 34.758285 32.051958 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-20T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>17</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>ז'בוטינסקי 33, פתח תקווה</CallAddress>
+    <Latitude>32.090468</Latitude>
+    <Longitude>34.878975</Longitude>
+    <OpeningTime>2025-07-13T22:30:43</OpeningTime>
+    <CallDescription>ז'בוטינסקי 33, פתח תקווה 34.878975 32.090468 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-19T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>18</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>דרך בגין 48, תל אביב</CallAddress>
+    <Latitude>32.069509</Latitude>
+    <Longitude>34.78337</Longitude>
+    <OpeningTime>2025-07-08T22:30:43</OpeningTime>
+    <CallDescription>דרך בגין 48, תל אביב 34.78337 32.069509 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-24T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>19</Id>
+    <CallType>HouseCleaning</CallType>
+    <CallAddress>התקווה 7, אשקלון</CallAddress>
+    <Latitude>31.670788</Latitude>
+    <Longitude>34.571228</Longitude>
+    <OpeningTime>2025-07-08T22:30:43</OpeningTime>
+    <CallDescription>התקווה 7, אשקלון 34.571228 31.670788 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-24T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>20</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>בן גוריון 22, רמת גן</CallAddress>
+    <Latitude>32.084027</Latitude>
+    <Longitude>34.812335</Longitude>
+    <OpeningTime>2025-07-08T22:30:43</OpeningTime>
+    <CallDescription>בן גוריון 22, רמת גן 34.812335 32.084027 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-24T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>21</Id>
+    <CallType>Transportation</CallType>
+    <CallAddress>חיים ויצמן 15, נתניה</CallAddress>
+    <Latitude>32.332744</Latitude>
+    <Longitude>34.853721</Longitude>
+    <OpeningTime>2025-07-11T22:30:43</OpeningTime>
+    <CallDescription>חיים ויצמן 15, נתניה 34.853721 32.332744 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-21T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>22</Id>
+    <CallType>HouseCleaning</CallType>
+    <CallAddress>יפו 8, חיפה</CallAddress>
+    <Latitude>32.816562</Latitude>
+    <Longitude>34.995884</Longitude>
+    <OpeningTime>2025-07-03T22:30:43</OpeningTime>
+    <CallDescription>יפו 8, חיפה 34.995884 32.816562 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-29T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>23</Id>
+    <CallType>CookingFood</CallType>
+    <CallAddress>הר הצופים 3, ירושלים</CallAddress>
+    <Latitude>31.793755</Latitude>
+    <Longitude>35.241553</Longitude>
+    <OpeningTime>2025-07-05T22:30:43</OpeningTime>
+    <CallDescription>הר הצופים 3, ירושלים 35.241553 31.793755 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-27T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>24</Id>
+    <CallType>HouseCleaning</CallType>
+    <CallAddress>המושבה 7, כפר תבור</CallAddress>
+    <Latitude>32.687209</Latitude>
+    <Longitude>35.420792</Longitude>
+    <OpeningTime>2025-07-08T22:30:43</OpeningTime>
+    <CallDescription>המושבה 7, כפר תבור 35.420792 32.687209 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-24T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>25</Id>
+    <CallType>Transportation</CallType>
+    <CallAddress>נחלת יצחק 18, תל אביב</CallAddress>
+    <Latitude>32.078912</Latitude>
+    <Longitude>34.798176</Longitude>
+    <OpeningTime>2025-07-04T22:30:43</OpeningTime>
+    <CallDescription>נחלת יצחק 18, תל אביב 34.798176 32.078912 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-28T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>26</Id>
+    <CallType>HouseCleaning</CallType>
+    <CallAddress>עמק רפאים 34, ירושלים</CallAddress>
+    <Latitude>31.764492</Latitude>
+    <Longitude>35.220554</Longitude>
+    <OpeningTime>2025-07-08T22:30:43</OpeningTime>
+    <CallDescription>עמק רפאים 34, ירושלים 35.220554 31.764492 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-24T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>27</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>בר אילן 10, חולון</CallAddress>
+    <Latitude>32.01333</Latitude>
+    <Longitude>34.776073</Longitude>
+    <OpeningTime>2025-07-09T22:30:43</OpeningTime>
+    <CallDescription>בר אילן 10, חולון 34.776073 32.01333 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-23T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>28</Id>
+    <CallType>Ironing</CallType>
+    <CallAddress>סוקולוב 50, הרצליה</CallAddress>
+    <Latitude>32.164097</Latitude>
+    <Longitude>34.843212</Longitude>
+    <OpeningTime>2025-07-08T22:30:43</OpeningTime>
+    <CallDescription>סוקולוב 50, הרצליה 34.843212 32.164097 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-24T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>29</Id>
+    <CallType>HouseCleaning</CallType>
+    <CallAddress>דרך חיפה 101, חיפה</CallAddress>
+    <Latitude>32.811834</Latitude>
+    <Longitude>34.983419</Longitude>
+    <OpeningTime>2025-07-04T22:30:43</OpeningTime>
+    <CallDescription>דרך חיפה 101, חיפה 34.983419 32.811834 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-28T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>30</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>ארלוזורוב 21, נתניה</CallAddress>
+    <Latitude>32.329859</Latitude>
+    <Longitude>34.855738</Longitude>
+    <OpeningTime>2025-07-07T22:30:43</OpeningTime>
+    <CallDescription>ארלוזורוב 21, נתניה 34.855738 32.329859 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-25T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>31</Id>
+    <CallType>Shopping</CallType>
+    <CallAddress>יפו 8, חיפה</CallAddress>
+    <Latitude>32.816562</Latitude>
+    <Longitude>34.995884</Longitude>
+    <OpeningTime>2025-07-05T22:30:43</OpeningTime>
+    <CallDescription>יפו 8, חיפה 34.995884 32.816562 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-27T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>32</Id>
+    <CallType>CookingFood</CallType>
+    <CallAddress>חיים ויצמן 15, נתניה</CallAddress>
+    <Latitude>32.332744</Latitude>
+    <Longitude>34.853721</Longitude>
+    <OpeningTime>2025-07-05T22:30:43</OpeningTime>
+    <CallDescription>חיים ויצמן 15, נתניה 34.853721 32.332744 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-27T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>33</Id>
+    <CallType>Ironing</CallType>
+    <CallAddress>ירושלים 12, רמלה</CallAddress>
+    <Latitude>31.928987</Latitude>
+    <Longitude>34.873123</Longitude>
+    <OpeningTime>2025-07-11T22:30:43</OpeningTime>
+    <CallDescription>ירושלים 12, רמלה 34.873123 31.928987 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-21T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>34</Id>
+    <CallType>Ironing</CallType>
+    <CallAddress>הרצל 9, נהריה</CallAddress>
+    <Latitude>33.004863</Latitude>
+    <Longitude>35.092421</Longitude>
+    <OpeningTime>2025-07-06T22:30:43</OpeningTime>
+    <CallDescription>הרצל 9, נהריה 35.092421 33.004863 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-26T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>35</Id>
+    <CallType>HouseCleaning</CallType>
+    <CallAddress>דיזנגוף 65, תל אביב</CallAddress>
+    <Latitude>32.080126</Latitude>
+    <Longitude>34.774455</Longitude>
+    <OpeningTime>2025-07-12T22:30:43</OpeningTime>
+    <CallDescription>דיזנגוף 65, תל אביב 34.774455 32.080126 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-20T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>36</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>הר הצופים 3, ירושלים</CallAddress>
+    <Latitude>31.793755</Latitude>
+    <Longitude>35.241553</Longitude>
+    <OpeningTime>2025-07-10T22:30:43</OpeningTime>
+    <CallDescription>הר הצופים 3, ירושלים 35.241553 31.793755 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-22T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>37</Id>
+    <CallType>HouseCleaning</CallType>
+    <CallAddress>ראול ולנברג 24, תל אביב</CallAddress>
+    <Latitude>32.111427</Latitude>
+    <Longitude>34.840487</Longitude>
+    <OpeningTime>2025-07-11T22:30:43</OpeningTime>
+    <CallDescription>ראול ולנברג 24, תל אביב 34.840487 32.111427 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-21T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>38</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>דרך חיפה 101, חיפה</CallAddress>
+    <Latitude>32.811834</Latitude>
+    <Longitude>34.983419</Longitude>
+    <OpeningTime>2025-07-10T22:30:43</OpeningTime>
+    <CallDescription>דרך חיפה 101, חיפה 34.983419 32.811834 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-22T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>39</Id>
+    <CallType>Shopping</CallType>
+    <CallAddress>יפו 8, חיפה</CallAddress>
+    <Latitude>32.816562</Latitude>
+    <Longitude>34.995884</Longitude>
+    <OpeningTime>2025-07-09T22:30:43</OpeningTime>
+    <CallDescription>יפו 8, חיפה 34.995884 32.816562 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-23T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>40</Id>
+    <CallType>Shopping</CallType>
+    <CallAddress>סוקולוב 50, הרצליה</CallAddress>
+    <Latitude>32.164097</Latitude>
+    <Longitude>34.843212</Longitude>
+    <OpeningTime>2025-07-03T22:30:43</OpeningTime>
+    <CallDescription>סוקולוב 50, הרצליה 34.843212 32.164097 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-29T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>41</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>עמק רפאים 34, ירושלים</CallAddress>
+    <Latitude>31.764492</Latitude>
+    <Longitude>35.220554</Longitude>
+    <OpeningTime>2025-07-11T22:30:43</OpeningTime>
+    <CallDescription>עמק רפאים 34, ירושלים 35.220554 31.764492 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-21T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>42</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>יפו 8, חיפה</CallAddress>
+    <Latitude>32.816562</Latitude>
+    <Longitude>34.995884</Longitude>
+    <OpeningTime>2025-07-03T22:30:43</OpeningTime>
+    <CallDescription>יפו 8, חיפה 34.995884 32.816562 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-29T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>43</Id>
+    <CallType>Transportation</CallType>
+    <CallAddress>ז'בוטינסקי 33, פתח תקווה</CallAddress>
+    <Latitude>32.090468</Latitude>
+    <Longitude>34.878975</Longitude>
+    <OpeningTime>2025-07-13T22:30:43</OpeningTime>
+    <CallDescription>ז'בוטינסקי 33, פתח תקווה 34.878975 32.090468 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-19T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>44</Id>
+    <CallType>BabysitterServices</CallType>
+    <CallAddress>דיזנגוף 65, תל אביב</CallAddress>
+    <Latitude>32.080126</Latitude>
+    <Longitude>34.774455</Longitude>
+    <OpeningTime>2025-07-11T22:30:43</OpeningTime>
+    <CallDescription>דיזנגוף 65, תל אביב 34.774455 32.080126 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-21T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>45</Id>
+    <CallType>HouseCleaning</CallType>
+    <CallAddress>שדרות הנשיא 120, חיפה</CallAddress>
+    <Latitude>32.802379</Latitude>
+    <Longitude>34.985995</Longitude>
+    <OpeningTime>2025-07-04T22:30:43</OpeningTime>
+    <CallDescription>שדרות הנשיא 120, חיפה 34.985995 32.802379 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-28T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>46</Id>
+    <CallType>Transportation</CallType>
+    <CallAddress>שדרות ירושלים 45, יפו</CallAddress>
+    <Latitude>32.051958</Latitude>
+    <Longitude>34.758285</Longitude>
+    <OpeningTime>2025-07-03T22:30:43</OpeningTime>
+    <CallDescription>שדרות ירושלים 45, יפו 34.758285 32.051958 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-29T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>47</Id>
+    <CallType>Shopping</CallType>
+    <CallAddress>זבוטינסקי 7, רמת גן</CallAddress>
+    <Latitude>32.083612</Latitude>
+    <Longitude>34.815412</Longitude>
+    <OpeningTime>2025-07-09T22:30:43</OpeningTime>
+    <CallDescription>זבוטינסקי 7, רמת גן 34.815412 32.083612 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-23T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>49</Id>
+    <CallType>Ironing</CallType>
+    <CallAddress>קיבוץ גלויות 23, תל אביב</CallAddress>
+    <Latitude>32.045431</Latitude>
+    <Longitude>34.764147</Longitude>
+    <OpeningTime>2025-07-12T22:30:43</OpeningTime>
+    <CallDescription>קיבוץ גלויות 23, תל אביב 34.764147 32.045431 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-20T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>50</Id>
+    <CallType>CookingFood</CallType>
+    <CallAddress>הגליל 12, צפת</CallAddress>
+    <Latitude>32.965678</Latitude>
+    <Longitude>35.494012</Longitude>
+    <OpeningTime>2025-07-13T22:30:43</OpeningTime>
+    <CallDescription>הגליל 12, צפת 35.494012 32.965678 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-19T22:30:43</MaxTimeFinishCall>
+  </Call>
+  <Call>
+    <Id>48</Id>
+    <CallType>HouseCleaning</CallType>
+    <CallAddress>הרצל 60, חדרה</CallAddress>
+    <Latitude>32.5755646</Latitude>
+    <Longitude>34.95230255</Longitude>
+    <OpeningTime>2025-07-11T22:30:43</OpeningTime>
+    <CallDescription>הרצל 60, חדרה 34.918386 32.434046 call</CallDescription>
+    <MaxTimeFinishCall>2025-07-21T22:30:43</MaxTimeFinishCall>
+  </Call>
+</ArrayOfCall>

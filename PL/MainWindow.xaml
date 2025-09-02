@@ -1,0 +1,106 @@
+﻿<Window x:Class="PL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+         DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
+         Loaded="window_Loaded"
+          Closed="window_Closed">
+    
+    <Window.Resources>
+        
+        <Style x:Key="myButtonStyle" TargetType="Button">
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="FontFamily" Value="Consolas" />
+            <Setter Property="Height" Value="25" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+        
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--Date Time Grid-->
+        <Grid Grid.Column="1">
+            <StackPanel  IsEnabled="{Binding IsSimulatorRunning, Converter={StaticResource InverseBoolConverterKey}}">
+                <Label Content="{Binding CurrentTime}" Background="Yellow" HorizontalAlignment="Center" />
+                <Button Style="{StaticResource myButtonStyle}" Content="Add One Minutes" Click="btnAddOneMinute_Click"/>
+                <Button  Style="{StaticResource myButtonStyle}" Content="Add One Day" Click="btnAddOneDay_Click"/>
+                <Button  Style="{StaticResource myButtonStyle}" Content="Add One Hour" Click="btnAddOneHour_Click"/>
+                <Button Style="{StaticResource myButtonStyle}" Content="Add One Month" Click="btnAddOneMonth_Click"/>
+                <Button  Style="{StaticResource myButtonStyle}" Content="Add One Year" Click="btnAddOneYear_Click"/>
+            </StackPanel>
+        </Grid>
+        <WrapPanel Margin="10"  IsEnabled="{Binding IsSimulatorRunning, Converter={StaticResource InverseBoolConverterKey}}">
+            <TextBlock Text="Risk Range:" VerticalAlignment="Center" Foreground="Blue"/>
+            <TextBox Text="{Binding CurrentRiskRange}"  Width="40" Margin="5,0" BorderBrush="HotPink" />
+            <Button Content="Update" Width="60" Margin="5,0" Style="{StaticResource myButtonStyle}" Click="btnUpdateRiskRange_click"/>
+
+            
+        </WrapPanel>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center"  IsEnabled="{Binding IsSimulatorRunning, Converter={StaticResource InverseBoolConverterKey}}">
+            <Button Content="Reset DB"  Width="200" Margin="10" Style="{StaticResource myButtonStyle}" Click="resetDB_Click"/>
+            <Button Content="init DB" Width="200" Margin="10"  Style="{StaticResource myButtonStyle}" Click="initDB_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
+            <!--view volunteer list-->
+            <Button Content="Handle Volunteer"  Width="200" Margin="10" Style="{StaticResource myButtonStyle}" Click="btnViewVolunteerList_Click"/>
+            <!--view call list-->
+            <Button Content="Handle Call" Width="200" Margin="10"  Style="{StaticResource myButtonStyle}" Click="btnViewCallList_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <Label Content="call by status quantities:" />
+            <StackPanel Orientation="Horizontal">
+                <Button Tag="0" Content="Open" Click="showCallsByStatus_Click"/>
+                <TextBlock Text="{Binding CallByStatus[0]}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Tag="1" Content="In Treatment" Click="showCallsByStatus_Click"/>
+                <TextBlock Text="{Binding CallByStatus[1]}"/>
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal">
+                <Button Tag="2" Content="Closed" Click="showCallsByStatus_Click"/>
+                <TextBlock Text="{Binding CallByStatus[2]}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Tag="3" Content="Expired" Click="showCallsByStatus_Click"/>
+                <TextBlock Text="{Binding CallByStatus[3]}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Tag="4" Content="Open At Risk" Click="showCallsByStatus_Click"/>
+                <TextBlock Text="{Binding CallByStatus[4]}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Tag="5" Content="In Treatment At Risk" Click="showCallsByStatus_Click"/>
+                <TextBlock Text="{Binding CallByStatus[5]}"/>
+            </StackPanel>
+        </StackPanel>
+        <Grid Grid.Column="2" Grid.Row="0" Margin="10">
+            <GroupBox Header="Simulator" FontWeight="Bold" Padding="10">
+                <StackPanel>
+                    <!-- קצב התקדמות השעון -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Label Content="Interval (minutes):" VerticalAlignment="Center"/>
+                        <TextBox Width="60" Margin="5,0,0,0" Text="{Binding Interval, Mode=TwoWay}" IsEnabled="{Binding IsSimulatorRunning, Converter={StaticResource InverseBoolConverterKey}}"/>
+                    </StackPanel>
+
+                    <!-- כפתור הפעלה/עצירה -->
+                    <Button Width="140" Height="30"
+                    Content="{Binding IsSimulatorRunning, Converter={StaticResource SimulatorButtonContentConverterKey}}"
+                    Click="SimulatorToggleButton_Click"
+                    Style="{StaticResource myButtonStyle}"/>
+                </StackPanel>
+            </GroupBox>
+        </Grid>
+    </Grid>
+</Window>
