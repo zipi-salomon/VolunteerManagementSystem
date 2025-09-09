@@ -1,18 +1,17 @@
-HEAD
-hello
-finish stage-0
-# dotNet5785_2635_3271
+# Task Management System
 
-# VolunteerManagementSystem
-A volunteer management system built with C# and .NET. Allows managing volunteers and service calls efficiently.
+## Project Overview
+This project is a task management system developed using **WPF** for the frontend and **C#** for the backend. It features secure login, session handling, and CRUD operations for tasks with proper state management. The system follows a **3-layer architecture**, adheres to **SOLID principles**, and correctly applies design patterns such as **Dependency Injection, Singleton, Observer, and Factory**, ensuring maintainable, scalable, and clean code.
 
-## Technologies
-- C#
-- .NET
-- XML for data storage
-- Visual Studio
+## Key Features
+- **User Authentication:** Secure login and session handling.
+- **Task Management:** Create, read, update, and delete tasks.
+- **State Management:** Smooth and predictable UI behavior.
+- **Clean Architecture:** 3-layer design following SOLID principles and best practices.
+- **Design Patterns:** Dependency Injection, Singleton, Observer, and Factory correctly applied for modularity and maintainability.
 
-## How to Run
-1. Clone the repository to your local machine.
-2. Open the solution in Visual Studio.
-3. Build and run the application.
+## Tech Stack
+- **Frontend:** WPF
+- **Backend:** C#
+- **Architecture:** 3-layer model, SOLID principles
+- **Design Patterns:** Dependency Injection, Singleton, Observer, Factory
